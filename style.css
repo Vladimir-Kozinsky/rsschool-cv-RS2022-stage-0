@@ -1,1 +1,45 @@
-stiles
+ *{
+    padding: 0;
+    margin: 0px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+background-color: turquoise;
+}
+
+.logo {
+    width: 50%;
+    background-color: burlywood;
+}
+
+.menu {
+    width: 50%;
+    background-color: coral;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
