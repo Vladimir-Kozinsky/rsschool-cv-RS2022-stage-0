@@ -19,6 +19,12 @@
      position: relative;
  }
 
+ ._active {
+     background-color: rgb(151, 148, 148);
+     border-radius: 0px 0px 10px 10px;
+     transition: 0.3s;
+ }
+
  .container {
      max-width: 1440px;
      margin: 0 auto;

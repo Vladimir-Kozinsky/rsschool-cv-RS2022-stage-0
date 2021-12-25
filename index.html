@@ -11,15 +11,15 @@
 
 <body>
     <header class="container">
-        <div class="container header-container">
-            <div class="logo">сurriculum vitae</div>
+        <div id="panel" class=" container header-container">
+            <div class="logo"></div>
             <div class="menu">
                 <ul>
-                    <li><a href="">about</a></li>
-                    <li><a href="">skills</a></li>
-                    <li><a href="">portfolio</a></li>
-                    <li><a href="">experience</a></li>
-                    <li><a href="">contacts</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#contacts">contacts</a></li>
                 </ul>
             </div>
 
@@ -46,7 +46,7 @@
         <section class="section">
             <div class="container container-basicInfo ">
                 <div class="about">
-                    <h3>About</h3>
+                    <h3 id='about'>About</h3>
                     <p>
                         Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.
                         Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and
@@ -55,7 +55,7 @@
                     </p>
                 </div>
                 <div class="contacts">
-                    <h3>Contacts</h3>
+                    <h3 id="contacts">Contacts</h3>
                     <div class="contactsWrapper">
                         <div class="left-column">
                             <ul>
@@ -81,13 +81,13 @@
             <div class="container education-container">
                 <div class="eductionWrapper">
                     <div class="left-eductionWrapper">
-                        <h3>Education</h3>
+                        <h3 class="education">Education</h3>
                         <p>2006-2012 Minsk State Higher Aviation College (Minsk), Technical operation of aircraft and
                             engines</p>
 
                     </div>
                     <div class="right-eductionWrapper">
-                        <h3>Skills</h3>
+                        <h3 id="skills">Skills</h3>
                         <p>
                             HTML5, CSS3, JavaScript React JS, TypeScript, React-Router, Redux, API, AJAX, Git, mongoDB,
                             Express
@@ -113,7 +113,7 @@
         </section>
         <section class="section">
             <div class="container portfolio-container">
-                <h3>Portfolio</h3>
+                <h3 id="portfolio">Portfolio</h3>
                 <div class="potfolio">
                     <div class="portfolioItem">
                         <div class="portfolioItem-img">
@@ -138,7 +138,7 @@
             </div>
         </section>
         <section class="section">
-            <h3>Work Experience</h3>
+            <h3 id="experience">Work Experience</h3>
             <div class="container experience-container">
                 <div class="experienceItem">
                     <div class="job">
@@ -226,18 +226,29 @@
     </main>
     <footer>
         <div class="container developerInfo-container">
-                <a href="">© 2021</a>
-                <div class="footer-links">
-                    <a href=""><img src="./assets/Youtube.png" alt=""></a>
-                    <a href=""><img src="./assets/Instagram.png" alt=""></a>
-                    <a href=""><img src="./assets/Facebook.png" alt=""></a>
-                    <a href=""><img src="./assets/Twitter.png" alt=""></a>
-                    <a href=""><img src="./assets/Pinterest.png" alt=""></a>
-                </div>
-                <a href="https://github.com/Vladimir-Kozinsky">Vladimir Kozinsky</a>
+            <a href="">© 2021</a>
+            <div class="footer-links">
+                <a href=""><img src="./assets/Youtube.png" alt=""></a>
+                <a href=""><img src="./assets/Instagram.png" alt=""></a>
+                <a href=""><img src="./assets/Facebook.png" alt=""></a>
+                <a href=""><img src="./assets/Twitter.png" alt=""></a>
+                <a href=""><img src="./assets/Pinterest.png" alt=""></a>
+            </div>
+            <a href="https://github.com/Vladimir-Kozinsky">Vladimir Kozinsky</a>
         </div>
     </footer>
-
+    <script>
+        let element = document.getElementById('about')
+        let header = document.getElementById('panel')
+        const scrolling = () => {
+            if (element.getBoundingClientRect().top < 0) {
+                header.classList.add("_active")
+            } else {
+                header.classList.remove("_active")
+            }
+        }
+        document.addEventListener("scroll", scrolling, false);
+    </script>
 </body>
 
 </html>
