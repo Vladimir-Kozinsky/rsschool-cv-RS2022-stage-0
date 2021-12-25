@@ -197,18 +197,19 @@
 
  .portfolio-container h3 {
      margin-left: 20px;
+     margin-bottom: 0px;
  }
 
  .potfolio {
-     padding: 0px 40px 40px;
+     padding: 0px 40px 20px;
      display: flex;
      justify-content: space-around;
+     flex-wrap: wrap;
  }
-
- .portfolioItem {
-     
- }
-
+ 
+.portfolioItem {
+    margin: 20px;
+}
  .portfolioItem-img {
      width: 400px;
      height: 200px;
