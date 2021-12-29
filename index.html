@@ -144,29 +144,29 @@
     <span class="text-color-red" >import</span> s <span class="text-color-red">from</span> <span class="text-color-blue">'./clock.module.css'</span>;
     
     <span class="text-color-red" >class</span> <span class="text-color-orange">Clock</span> <span class="text-color-red">extends</span> <span class="text-color-orange">React</span>.<span class="text-color-blue">Component</span> {
-         <span class="text-color-purpure">constructor</span>(props) {
-             super(props);
-              this.<span class="text-color-blue">state =</span> { <span class="text-color-blue">date</span>: <span class="text-color-red">new</span> <span class="text-color-orange">Date</span>() };
-          }
-          <span class="text-color-purpure">componentDidMount</span>() {
-              this.<span class="text-color-blue">timerID</span> = <span class="text-color-purpure">setInterval</span>(() => this.<span class="text-color-purpure">tick</span>(), <span class="text-color-blue">1000</span>);
-          }
-          <span class="text-color-purpure">componentWillUnmount</span>() {
-           <span class="text-color-purpure">clearInterval</span>(this.<span class="text-color-blue">timerID</span>);
-          }
-          <span class="text-color-purpure">tick</span>() {
-             this.<span class="text-color-purpure">setState</span>({
-                  <span class="text-color-blue">date</span>: <span class="text-color-red">new</span> <span class="text-color-orange">Date</span>()
-              });
-          }
-          <span class="text-color-purpure">render</span>() {
-              return (
-                <span class="text-color-blue">&lt</span><span class="text-color-green">div</span> <span class="text-color-blue">className</span>={s.<span class="text-color-blue">clock</span>}<span class="text-color-blue">></span>
-                    <span class="text-color-blue">&lt</span><span class="text-color-green">h3</span><span class="text-color-blue">&gt</span>Time:{this.<span class="text-color-blue">state</span>.<span class="text-color-blue">date</span>.<span class="text-color-purpure">toLocaleTimeString</span>()}<span class="text-color-blue">&lt/</span><span class="text-color-green">h3</span><span class="text-color-blue">&gt</span>
-                <span class="text-color-blue">&lt/</span><span class="text-color-green">div</span><span class="text-color-blue">&gt</span>
-         )
-      }
-  }
+        <span class="text-color-purpure">constructor</span>(props) {
+            super(props);
+             this.<span class="text-color-blue">state =</span> { <span class="text-color-blue">date</span>: <span class="text-color-red">new</span> <span class="text-color-orange">Date</span>() };
+        }
+        <span class="text-color-purpure">componentDidMount</span>() {
+             this.<span class="text-color-blue">timerID</span> = <span class="text-color-purpure">setInterval</span>(() => this.<span class="text-color-purpure">tick</span>(), <span class="text-color-blue">1000</span>);
+        }
+        <span class="text-color-purpure">componentWillUnmount</span>() {
+          <span class="text-color-purpure">clearInterval</span>(this.<span class="text-color-blue">timerID</span>);
+        }
+        <span class="text-color-purpure">tick</span>() {
+            this.<span class="text-color-purpure">setState</span>({
+                 <span class="text-color-blue">date</span>: <span class="text-color-red">new</span> <span class="text-color-orange">Date</span>()
+             });
+        }
+        <span class="text-color-purpure">render</span>() {
+            return (
+               <span class="text-color-blue">&lt</span><span class="text-color-green">div</span> <span class="text-color-blue">className</span>={s.<span class="text-color-blue">clock</span>}<span class="text-color-blue">></span>
+                   <span class="text-color-blue">&lt</span><span class="text-color-green">h3</span><span class="text-color-blue">&gt</span>Time:{this.<span class="text-color-blue">state</span>.<span class="text-color-blue">date</span>.<span class="text-color-purpure">toLocaleTimeString</span>()}<span class="text-color-blue">&lt/</span><span class="text-color-green">h3</span><span class="text-color-blue">&gt</span>
+               <span class="text-color-blue">&lt/</span><span class="text-color-green">div</span><span class="text-color-blue">&gt</span>
+            )
+        }
+    }
                     </code>
                 </pre>
 

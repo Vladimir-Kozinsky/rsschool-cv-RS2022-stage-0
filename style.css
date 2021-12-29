@@ -250,6 +250,8 @@
      line-height: 20px;
      margin: 0 auto;
      font-size: 14px;
+     border-radius: 15px;     
+
  }
  .code-example {
  }
