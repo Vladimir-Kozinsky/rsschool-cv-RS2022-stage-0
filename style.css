@@ -206,6 +206,7 @@
      padding-top: 20px;
      box-shadow: 0 0 10px rgb(88, 88, 88);
      width: 100%;
+     padding-bottom: 30px;
  }
 
  .portfolio-container h2 {
@@ -237,8 +238,38 @@
  .portfolioItem-img:hover {
      opacity: 0.7;
  }
+.code-example pre {
+     width: 610px;
+     background: rgb(39, 39, 39);
+     color: rgb(211, 210, 210);
+     word-spacing: 5px;
+     letter-spacing: 0.9px;
+     font-family: 'PT Sans', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 20px;
+     margin: 0 auto;
+     font-size: 14px;
+ }
+ .code-example {
+ }
+ .text-color-red {
+     color: rgb(219, 33, 0);
+ }
+ .text-color-blue {
+     color: rgb(137, 177, 252);
+ }
+ .text-color-orange {
+     color: orange;
+ }
+ .text-color-purpure {
+     color: rgb(189, 129, 189);
+ }
+ .text-color-green {
+     color: rgb(3, 211, 3);
+ }
 
-
+ 
 
 
  /* EXPERIENCE */
