@@ -1,2 +1,1 @@
-# rsschool-cv
-init: start rsschool-cv
+https://vladimir-kozinsky.github.io/rsschool-cv/
