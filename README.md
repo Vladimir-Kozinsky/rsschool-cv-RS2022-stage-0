@@ -1,1 +1,1 @@
-https://vladimir-kozinsky.github.io/rsschool-cv/cv
+https://vladimir-kozinsky.github.io/rsschool-cv/
