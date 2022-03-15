@@ -22,6 +22,7 @@ Skills
 Certificates
 --------------
 + Basics of HTML and CSS
++ JS/FE PRE-SCHOOL 2022 (JAVASCRIPT)
 
 Languages
 -------------
@@ -31,8 +32,12 @@ Languages
 Experience
 --------------
 My project links
-+  https://github.com/Vladimir-Kozinsky/react-project.git
++ https://github.com/Vladimir-Kozinsky/react-project.git
 + https://github.com/Vladimir-Kozinsky/currentRestAPI.git
++ https://github.com/rolling-scopes-school/vladimir-kozinsky-JSFEPRESCHOOL/tree/gh-pages/custom-video
++ https://github.com/rolling-scopes-school/vladimir-kozinsky-JSFEPRESCHOOL/tree/gh-pages/movie-app
++ https://github.com/rolling-scopes-school/vladimir-kozinsky-JSFEPRESCHOOL/tree/gh-pages/portfolio
++ https://github.com/rolling-scopes-school/vladimir-kozinsky-JSFEPRESCHOOL/tree/gh-pages/random-game
 
 ### 1. FZC TECNOLINE (United Arab Emirates) 
 
